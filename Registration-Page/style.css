@@ -1,0 +1,83 @@
+
+body {
+    font-family: 'Poppins', sans-serif;
+    margin: 0px;
+}
+
+h1{
+    font-size: 50px;
+}
+h2{
+    font-size: 40px;
+}
+
+.name-highlight {
+    color: orange;
+}
+
+.orange-highlight {
+    color: orange;
+}
+
+.main-width {
+    width: 80%;
+    float: left;
+    margin-left: 5%;
+    padding-left: 2%;
+    text-align: center;
+}
+
+.text-level{
+    font-size: 20px;
+    font-weight: 500;
+}
+
+.signup-form{
+    text-align: center;
+}
+
+.input-box{
+    border-color: tomato;
+    border-radius: .5em;
+    padding: 8px;
+    margin: 10px;
+}
+
+.half-width img {
+    width: 80%;
+}
+
+.top-banner {
+    background-image: url("images/top-banner.png");
+    background-repeat: no-repeat;
+}
+
+.dept-drop-down {
+    border-color: tomato;
+    border-radius: .5em;
+    border-width: 2px;
+    padding: 7px 66px;
+    margin: 10px;
+}
+
+
+section {
+    height: 500px;
+    padding-bottom: 100px;
+}
+
+.link-button {
+    text-decoration: none;
+    background-image: linear-gradient(45deg,lightSalmon, tomato);
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    font-weight: bold;
+
+}
+
+
+footer p {
+    text-align: center;
+    font-size: 12px;
+}
