@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="mt-5">
+            <h1 class="text-success">Scholarship</h1>
+        </div>
+
+        <div class="border border-success p-3">
+            <div class="row mt-2">
+                <div class="col-6">
+                    <input type="text" placeholder="ID" class="w-100" id="studentId">
+                </div>
+                <div class="col-6">
+                    <input type="text" placeholder="Name" class="w-100" id="name">
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-6">
+                    <select name="dept" id="dept" class="w-100 h-100">
+                        <option value="select">Select Depertment</option>
+                        <option value="cse">CSE</option>
+                        <option value="swe">SWE</option>
+                        <option value="eee">EEE</option>
+                    </select>
+                </div>
+                <div class="col-6">
+                    <input type="number" placeholder="Batch" class="w-100" id="batch">
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-6">
+                    <input type="text" placeholder="SSC GPA" class="w-100" id="ssc">
+                </div>
+                <div class="col-6">
+                    <input type="text" placeholder="HSC GPA" class="w-100" id="hsc">
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-6">
+                    <p>Campus</p>
+                    <input type="radio" id="main" name="campus" value="main">
+                    <label for="main">main</label><br>
+                    <input type="radio" id="permanent" name="campus" value="permanent">
+                    <label for="permanent">permanent</label><br>
+                    <input type="radio" id="uttara" name="campus" value="uttara">
+                    <label for="uttara">uttara</label><br>
+                </div>
+                <div class="col-6">
+                    <div>
+                        <input type="date" placeholder="Date" class="w-100" id="date">
+                    </div>
+                    <div class="mt-3">
+                        <input type="checkbox" id="child-ff" name="check-box-ff">
+                        <label for="child-ff">I'm a Children of Freedom Fighter</label><br>
+                    </div>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-6">
+                    <div>
+                        <button type="button" onclick="checkScholarship()" class="btn btn-success mt-3 pr-5">Submit</button>
+                    </div>
+                </div>
+                <div class="col-6">
+
+                    <div id="result" >
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+
+</html>
