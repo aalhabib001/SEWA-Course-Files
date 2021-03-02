@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous">
+    <link rel="stylesheet" href="tour.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="mt-5">
+            <h1 class="text-success">Dept of SWE</h1>
+        </div>
+        <div class="mt-2">
+            <h2 class="text-success">Tour 2019 Registration</h2>
+        </div>
+
+        <div class="border border-success p-3">
+            <div class="row mt-4">
+                <div class="col-3">
+                    <h5>Name</h5>
+                </div>
+                <div class="col-9">
+                    <input type="text" placeholder="Enter Name" class="w-100" id="name">
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-3">
+                    <h5>Phone No</h5>
+                </div>
+                <div class="col-9">
+                    <input type="text" placeholder="Enter Phone" class="w-100" id="phone">
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-3">
+                    <h5>Student ID</h5>
+                </div>
+                <div class="col-9">
+                    <input type="text" placeholder="Enter Id" class="w-100" id="studentId">
+                </div>
+            </div>
+            <div class="row mt-4">
+                <div class="col-3">
+                    <h5>Depertment</h5>
+                </div>
+                <div class="col-9">
+                    <select name="dept" id="dept" class="w-100 h-100">
+                        <option value="select">Select Depertment</option>
+                        <option value="cse">CSE</option>
+                        <option value="swe">SWE</option>
+                        <option value="eee">EEE</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mt-4">
+                <p>Campus</p>
+                <div class="col-4">
+                    <input type="radio" id="campus" name="type" value="student" onclick="checkRadioButton('student')">
+                    <label for="student">Student</label>
+                </div>
+                <div class="col-4">
+                    <input type="radio" id="campus" name="type" value="faculty"  onclick="checkRadioButton('faculty')">
+                    <label for="faculty">Faculty</label>
+                </div>
+                <div class="col-4">
+                    <input type="radio" id="campus" name="type" value="admin" onclick="checkRadioButton('admin')">
+                    <label for="admin">Admin</label>
+                </div>
+
+            </div>
+
+            <div id="newBox">
+
+            </div>
+
+            
+            <div id="payment">
+
+            </div>
+
+            <div>
+                <h4>Last date of payment is 18 Oct, 2019</h4>
+            </div>
+
+            <div class="row mt-4">
+                <div class="col-6">
+                    <div>
+                        <button type="button" onclick="checkScholarship()"
+                            class="btn btn-success mt-3 pr-5">Submit</button>
+                    </div>
+                </div>
+                <div class="col-6">
+
+                    <div id="result">
+
+                    </div>
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <script src="tour.js"></script>
+</body>
+
+</html>

@@ -1,11 +1,9 @@
-
 function checkScholarship() {
 
     sscGpa = checkSSC();
     hscGpa = checkHSC();
 
     showResult();
-
 }
 
 function showResult() {
